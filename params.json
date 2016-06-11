@@ -1,0 +1,6 @@
+{
+  "name": "Nodejs-angularjs-token-authentication",
+  "tagline": "Login and registration with nodesJs,angularJs,expressJs and jwt token",
+  "body": "# Nodejs-angularjs-token-authentication\r\n## Login and registration with nodesJs,angularJs,expressJs and jwt token\r\n1. npm install \r\n2. npm start",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
