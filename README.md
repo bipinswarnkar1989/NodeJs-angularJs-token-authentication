@@ -1,11 +1,12 @@
 
 
-# node-rest-token-auth
+# NodeJs-angularJs-token-authentication
 
 
 
 ## Usage
-
+1 . npm install
+2 . npm start 
 
 
 ## Developing
