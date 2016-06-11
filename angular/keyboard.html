@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<style type="text/css">
+button{width: 50px;height: 50px;}
+</style>
+<script type="text/javascript">
+var stop_dot = false;var stop_a = false;var stop_d = false;
+$(document).ready(function(){ 
+	var check = true;
+	var check2 = true;
+	var timer;
+	$(".one").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			if(!stop_dot){
+			setTimeout(function(){if(check){$(".output_box").val(output+".");}},1000);
+			check = true;
+			}
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"!");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".one").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+",");check = false;check2=true;}},600);
+		
+	});
+	
+	
+	//for two starts
+	$(".two").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			if(!stop_a){
+			setTimeout(function(){if(check){$(".output_box").val(output+"a");}},1000);
+			check = true;
+			}
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"c");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".two").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+"b");check = false;check2=true;}},600);
+		
+	});
+	
+	
+	//for three starts
+	$(".three").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			if(!stop_d){
+			setTimeout(function(){if(check){$(".output_box").val(output+"d");}},1000);
+			check = true;
+			}
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"f");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".three").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+"e");check = false;check2=true;}},600);
+		
+	});
+	
+	//for four starts
+	$(".four").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			setTimeout(function(){if(check){$(".output_box").val(output+"g");}},1000);
+			check = true;
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"i");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".four").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+"h");check = false;check2=true;}},600);
+		
+	});
+	
+	//for five starts
+	$(".five").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			setTimeout(function(){if(check){$(".output_box").val(output+"j");}},1000);
+			check = true;
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"l");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".five").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+"k");check = false;check2=true;}},600);
+		
+	});
+	
+	//for six starts
+	$(".six").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			setTimeout(function(){if(check){$(".output_box").val(output+"m");}},1000);
+			check = true;
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"o");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".six").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+"m");check = false;check2=true;}},600);
+		
+	});
+	
+	//for seven starts
+	$(".seven").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			setTimeout(function(){if(check){$(".output_box").val(output+"p");}},1000);
+			check = true;
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"r");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".seven").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+"q");check = false;check2=true;}},600);
+		
+	});
+	
+	//for eight starts
+	$(".eight").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			setTimeout(function(){if(check){$(".output_box").val(output+"t");}},1000);
+			check = true;
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"v");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".eight").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+"u");check = false;check2=true;}},600);
+		
+	});
+	
+	//for nine starts
+	$(".nine").click(function(){
+		var output = $(".output_box").val();
+		if(check2){
+			setTimeout(function(){if(check){$(".output_box").val(output+"w");}},1000);
+			check = true;
+		}
+		else{
+			var output = $(".output_box").val();
+			$(".output_box").val(output+"y");check=false;
+			clearTimeout(timer);timer=null;check2 = true;
+		}
+	});
+	
+	$(".nine").dblclick(function(){
+		var output = $(".output_box").val();
+		check2 = false;
+		timer = setTimeout(function(){if(!check2){$(".output_box").val(output+"x");check = false;check2=true;}},600);
+		
+	});
+	
+});
+
+$(document).on("pagecreate","#pageone",function(){
+	  $(".one").on("taphold",function(){
+		  var output = $(".output_box").val();
+		  $(".output_box").val(output+"1");stop_dot = true;
+		  
+	  });
+	  $(".two").on("taphold",function(){
+		  var output = $(".output_box").val();
+		  $(".output_box").val(output+"2");stop_dot = false;stop_a = true;
+		  
+	  });
+	  $(".three").on("taphold",function(){
+		  var output = $(".output_box").val();
+		  $(".output_box").val(output+"3");stop_a = false;stop_d = true;
+		  
+	  });
+	});
+
+</script>
+
+</head>
+<body>
+
+<div class="container" data-role="page" id="pageone">
+<div align="center" class="col-md-12">
+<input type="text" class="form-control output_box">
+<table align="center"   class="table">
+<tr>
+<td><button type="button" class="btn btn-primary btn-lg one">1<br>. , !</button></td><td><button type="button" class="btn btn-primary btn-lg two">2<br>a b c</button></td><td><button type="button" class="btn btn-primary btn-lg three">3<br>d e f</button></td>
+</tr>
+
+<tr>
+<td><button type="button" class="btn btn-primary btn-lg four">4<br>g h i</button></td><td><button type="button" class="btn btn-primary btn-lg five">5<br>j k l</button></td><td><button type="button" class="btn btn-primary btn-lg six">6<br>m n o</button></td>
+</tr>
+
+<tr>
+<td><button type="button" class="btn btn-primary btn-lg seven">7<br>p q r s</button></td><td><button type="button" class="btn btn-primary btn-lg eight">8<br>t u v</button></td><td><button type="button" class="btn btn-primary btn-lg nine">9<br>w x y z</button></td>
+</tr>
+</table>
+</div>  
+
+  
+</div> 
+
+</body>
+</html>
