@@ -1,7 +1,7 @@
 
 
 # NodeJs-angularJs-token-authentication
-
+<p align="center"><img src="https://github.com/bipinswarnkar1989/NodeJs-angularJs-token-authentication/blob/master/screen_auth.png"></p>
 
 
 ## Usage
